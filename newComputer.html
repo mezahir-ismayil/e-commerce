@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./newComputer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="discountRed">
+        <p>Summer sale for all swim suit and free express delivery - OFF 50%! <a href="">ShopNow</a></p>
+    </div>
+        <div class="menu">
+            <div >
+                <a href="./index.html">E-commerce</a>
+                <a href="./index.html">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact">About</a>
+                <a href="./registration.html">Sign Up</a>
+                <a href="">Shop</a>
+            </div>
+            <div class="section2 flex">
+                <input type="search" placeholder="What are you looking for ?">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-basket-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+                <p id="user">username</p>
+                <button onclick="logOut()">log out</button>
+            </div>
+        </div>
+
+        <div class="main">
+            <h1>Create product</h1>
+            <form action="./userProducts.html" id="form">
+                <label for="">Brand</label>
+                <input type="text" id="brand" required>
+                <label for="">Model</label>
+                <input type="text" id="modal" required>
+                <label for="">Category</label>
+                <input type="text" id="category">
+                <label for="">Description</label>
+                <textarea name="" id="description"></textarea>
+                <label for="">Price</label>
+                <input type="number" id="price" required>
+                <!-- <label for="">Rating</label>
+                <input type="text" id="rating"> -->
+                <label for="">Image URL</label>
+                <input type="url" id="url" required>
+                <img id="img" src="" alt="photo"><br>
+                <button onclick="save()">Save</button>
+                <input type="reset" id="reset" value="Reset">
+            </form>
+        </div>
+        <script src="./newComputer.js"></script>
+</body>
+</html>

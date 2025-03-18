@@ -3,33 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./shopping.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
     <div class="discountRed">
         <p>Summer sale for all swim suit and free express delivery - OFF 50%! <a href="">ShopNow</a></p>
     </div>
-    <div class="main">
         <div class="menu">
-            <div>
-                <a href="">E-commerce</a>
-                <a href="">Home</a>
-                <a href="">Contact</a>
-                <a href="">About</a>
-                <a href="">Sign Up</a>
+            <div >
+                <a href="./index.html">E-commerce</a>
+                <a href="./index.html">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact">About</a>
+                <a href="./registration.html">Sign Up</a>
                 <a href="">Shop</a>
             </div>
-            <div>
-                <input type="text" placeholder="What are you looking for ?">
-                <i>ICON</i>
-                <i>ICON</i>
-                <i>ICON</i>
+            <div class="section2 flex">
+                <input type="search" placeholder="What are you looking for ?">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-basket-shopping"></i>
+                <i class="fa-solid fa-user"></i>
                 <p id="user">username</p>
-                <button>log out</button>
+                <button onclick="logOut()">log out</button>
             </div>
         </div>
 
-        <div class="shop">
+        <div class="shoppingSection">
+        <div class="sidebar">
+            <h1>Shop</h1>
+            <input type="text" placeholder="Search">
+            <button class="all-products">All products</button>
+            <h2>Category</h2>
+            <ul>
+                <li>Laptops</li>
+                <li>Gaming</li>
+                <li>Accessories</li>
+                <li>Electronics</li>
+                <li>Audio</li>
+                <li>Wearables</li>
+                <li>Tablets</li>
+            </ul>
+            <h2>Rate</h2>
+            <div class="rating">
+                <span>★★★★★</span><br>
+                <span>★★★★☆</span><br>
+                <span>★★★☆☆</span><br>
+                <span>★★☆☆☆</span><br>
+                <span>★☆☆☆☆</span>
+            </div>
+        </div>
+        <div class="main-content">
+            <select class="sort-by">
+                <option>Sort by</option>
+            </select>
+            <div class="products">
+               <div class="row1 flex">
+                <div class="product">
+                    <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/7441/pdp/notebook-inspiron-14-plus-7441-pdp-compatibility-windows-snapdragon.psd?fmt=jpg&wid=5000&hei=2812" alt="Hanes Cotton T-Shirt">
+                    <p>Dell 2222 Dell XPS 13</p>
+                    <p class="price">19.99$</p>
+                    <p>★★★★☆ (62)</p>
+                    <button class="add-to-cart">add to cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i5.walmartimages.com/seo/Microsoft-XBOX-Wireless-Controller-Pulse-Red_c3ceaa96-974b-4bf3-84a2-e95734c7065b.fa72160a7bc41ba3f6e107be7b6afe7b.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Nike Running Shoes">
+                    <p>Microsoft Xbox Controller</p>
+                    <p class="price">89.99$</p>
+                    <p>★★★★★ (65)</p>
+                    <button class="add-to-cart">add to cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$" alt="Samsonite Backpack">
+                    <p>Sony PS5 Controller</p>
+                    <p class="price">79.99$</p>
+                    <p>★★★★☆ (42)</p>
+                    <button class="add-to-cart">add to cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://texnomart.az/wp-content/uploads/2021/08/Televizor-SAMSUNG-UE50AU7100UXRU-3.jpg" alt="Apple iPad Pro">
+                    <p>Samsung QlED TV</p>
+                    <p class="price">899.99$</p>
+                    <p>★★★★☆ (47)</p>
+                    <button class="add-to-cart">add to cart</button>
+                </div>
+               </div>
+
+               <div class="row2 flex">
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIKZRjQtJQauT683tem1qSotcw927Db2V_FQ&s" alt="">
+                    <p>Sony WH-10000XM5</p>
+                    <p class="price">19.99$</p>
+                    <p>★★★★☆ (62)</p>
+                    <button class="add-to-cart">add to cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/61hKen6gPrL._AC_UF894,1000_QL80_.jpg" alt="Nike Running Shoes">
+                    <p>Bose QC2341</p>
+                    <p class="price">89.99$</p>
+                    <p>★★★★★ (65)</p>
+                    <button class="add-to-cart">add to cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://irshad.az/cdn-cgi/image/width=1400/storage/products/80251/se40-starlight.jpg" alt="Samsonite Backpack">
+                    <p>Apple Watch 445</p>
+                    <p class="price">79.99$</p>
+                    <p>★★★★☆ (42)</p>
+                    <button class="add-to-cart">add to cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://www.w-t.az/storage/products/2024/01/n68FUq5TLXG5A04ZmQw118JoVrsQCWZmgLYO679M-full.jpg" alt="Apple iPad Pro">
+                    <p>LG QlED TV</p>
+                    <p class="price">899.99$</p>
+                    <p>★★★★☆ (47)</p>
+                    <button class="add-to-cart">add to cart</button>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        </div>
+        <!-- <div class="shop">
             <h2>Shop</h2>
             <input type="search">
             <button>All products</button>
@@ -93,6 +188,7 @@
             <p>Copyright Rimel 2022. All right reserved</p>
         </div>
         
-    </div>
+    </div> -->
+    <script src="./shopping.js"></script>
 </body>
 </html>

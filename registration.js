@@ -35,6 +35,10 @@ form.addEventListener("submit", ()=>{
         localStorage.setItem(`account ${count}`, JSON.stringify(accountData));
         alert("Успешная регистрация");
     })
+
+    function logIn() {
+      window.location.href = "logIn.html";
+    }
     
 // localStorage.removeItem()
 // localStorage.clear();

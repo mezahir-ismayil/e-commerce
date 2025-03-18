@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./userProducts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
@@ -11,9 +11,8 @@
     <div class="discountRed">
         <p>Summer sale for all swim suit and free express delivery - OFF 50%! <a href="">ShopNow</a></p>
     </div>
-    <div class="main">
         <div class="menu">
-            <div>
+            <div >
                 <a href="./index.html">E-commerce</a>
                 <a href="./index.html">Home</a>
                 <a href="#contact">Contact</a>
@@ -24,25 +23,34 @@
             <div class="section2 flex">
                 <input type="search" placeholder="What are you looking for ?">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <!-- <i class="fa-solid fa-basket-shopping"></i>
-                <i class="fa-solid fa-user"></i> -->
+                <i class="fa-solid fa-basket-shopping"></i>
+                <a href="./profile.html"><i class="fa-solid fa-user"></i></a>
                 <p id="user">username</p>
-                <button>log in</button>
+                <button onclick="logOut()">log out</button>
             </div>
         </div>
-        <div class="registration">
-            <form action="" id="form1">
-                <h2>Log in</h2>
-                <label for="">Name</label>
-                <input type="text" id="name" required>
-                <label for="">Password</label>
-                <input type="password" id="psw" required>
+  
 
-                <button>Log in</button>
-                <p>Don't have an account ? <a href="./registration.html">Sign up</a></p>
-            </form>
+        <button class="newProduct" onclick="newComp()">New Product</button>
+        <div class="myProducts">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                     <th>Бренд</th>
+                    <th>Модель</th>
+                    <th>Категория</th>
+                    <th>Изображение</th>
+                    <th>Цена</th>
+                    <th>Рейтинг</th>
+                    <th>Операции</th>
+                    </tr>
+                </thead>
+                <tbody id="addedItems">
+
+                </tbody>
+            </table>
         </div>
-    </div>
-    <script src="login.js"></script>
+        <script src="./userProducts.js"></script>
 </body>
 </html>
