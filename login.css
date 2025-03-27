@@ -145,3 +145,8 @@ form a {
     color: #DB4444;
     text-decoration: none;
 }
+
+.footer img{
+    width: 100vw;
+    height: 350px;
+}

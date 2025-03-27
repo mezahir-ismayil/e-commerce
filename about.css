@@ -11,7 +11,13 @@
     box-sizing: border-box;
 }
 .main {
-    width: 100vw;
+    width: 99vw;
+    padding: 0 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+.main img {
+    width: 80%;
 }
 .menu {
     /* background-color: #DB4444; */
@@ -20,7 +26,7 @@
     align-items: center;
     padding: 20px;
     border-bottom: 1px rgb(204, 204, 204) solid;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 .menu div:first-child {
     display: flex;
@@ -98,114 +104,7 @@
     font-size: 30px;
     font-weight: 700;
 }
-
-
-/* ******************************* */
-
-
-
-.shoppingSection {
-    display: flex;
-    padding: 0 150px;
+.footer img{
     width: 99vw;
-}
-
-.sidebar {
-    width: 30%;
-    padding: 20px;
-    background: #f8f8f8;
-    /* background-color: red; */
-}
-.sidebar h1, .sidebar h2 {
-    margin: 20px 0;
-}
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-.sidebar ul li {
-    padding: 5px 0;
-    cursor: pointer;
-}
-.rating span {
-    cursor: pointer;
-    display: block;
-    color: rgb(255, 191, 0);
-    font-size: 30px;
-    margin-top: 20px;
-}
-.main-content {
-    /* flex-grow: 1; */
-    padding: 20px;
-    width: 70%;
-}
-.sort-by {
-    margin-bottom: 20px;
-    padding: 5px;
-    width: 200px;
-
-}
-.products .row1,.row2{
-    display: flex;
-    /* width: 50%; */
-    /* gap: 20px; */
-}
-
-.product {
-    border: 1px solid #ddd;
-    padding: 20px;
-    text-align: center;
-    margin: 10px;
-    width: 185px;
-}
-.product:nth-child(even) {
-    padding: 30px 20px;
-}
-.product img {
-    max-width: 90%;
-    height: auto;
-    margin: 20px 0;
-}
-.price {
-    color: red;
-    font-weight: bold;
-}
-.add-to-cart {
-    background: black;
-    color: white;
-    padding: 10px;
-    margin: 20px auto;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 10px;
-}
-.sidebar input {
-    padding: 5px;
-    border: solid 1px rgb(215, 209, 209);
-    outline: none;
-}
-.all-products {
-    background-color: #DB4444;
-    padding: 8px;
-    border-radius: 5px;
-    color: white;
-    border: none;
-    width: 100px;
-}
-
-
-.addedItems {
-    display: flex;
-    flex-wrap: wrap;
-
-}
- .product p:nth-child(4) {
-    color: rgb(255, 191, 0);
-    font-size: 20px;
- }
-
- .footer img{
-    width: 100vw;
     height: 350px;
 }

@@ -3,53 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./bascet.css">
     <title>Document</title>
 </head>
 <body>
     <div class="discountRed">
         <p>Summer sale for all swim suit and free express delivery - OFF 50%! <a href="">ShopNow</a></p>
     </div>
-    <div class="main">
         <div class="menu">
-            <div>
-                <a href="">E-commerce</a>
-                <a href="">Home</a>
-                <a href="">Contact</a>
-                <a href="">About</a>
-                <a href="">Sign Up</a>
-                <a href="">Shop</a>
+            <div >
+                <a href="./index.html">E-commerce</a>
+                <a href="./index.html">Home</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./about.html">About</a>
+                <a href="./registration.html">Sign Up</a>
+                <a href="./shopping.html">Shop</a>
             </div>
-            <div>
-                <input type="text" placeholder="What are you looking for ?">
-                <i>ICON</i>
-                <i>ICON</i>
-                <i>ICON</i>
+            <div class="section2 flex">
+                <input type="search" placeholder="What are you looking for ?">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="./bascet.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                <a href="./profile.html"><i class="fa-solid fa-user"></i></a>
                 <p id="user">username</p>
-                <button>log out</button>
+                <button onclick="logOut()">log out</button>
             </div>
         </div>
 
+      <div class="main">
         <div class="cart">
             <h2>Cart</h2>
             <div class="productsList">
-               <div class="flex">
-                    <p>Product</p>
-                    <p>Price</p>
-                    <p>Quantity</p>
-                    <p>Subtotal</p>
-               </div>
+               <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="addedProducts">
+                    <!-- <input type="text"> -->
+                </tbody>
+               </table>
             </div>
+     
         </div>
 
         <div class="totalCart">
             <h2>Cart total</h2>
-            <p>Subtotal <span>189.001001999000</span></p>
-            <p>Shipping <span>free</span></p>
-            <p>Total <span>189.001010002990299</span></p>
-            <button>Procees to checkout</button>
+            <p>Subtotal <span class="cartCheck"></span></p> <hr>
+            <p>Shipping <span>free</span></p><hr>
+            <p>Total <span id="cartTotal"></span></p>
+            <button onclick="pay()">Procees to checkout</button>
         </div>
+      </div>
 
-        <div class="resume">
+
+        <!-- <div class="resume">
             <div class="flex">
                 <div>
                     <h2>Exclusive</h2>
@@ -84,8 +96,13 @@
             </div>
             <hr>
             <p>Copyright Rimel 2022. All right reserved</p>
-        </div>
+        </div> -->
         
-    </div>
+    <!-- </div> -->
+      <div class="footer">
+            <img src="./stttsrty.jpg" alt="">
+        </div>
+    <!-- <script src="./bascet.js"></script> -->
+     <script src="./bascet.js"></script>
 </body>
 </html>

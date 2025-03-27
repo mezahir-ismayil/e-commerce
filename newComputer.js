@@ -38,7 +38,8 @@ let compObj = {
     category: "",
     description: "",
     price: "",
-    img: ""
+    img: "",
+    forRating: 7
 }
 
 let count = 0;

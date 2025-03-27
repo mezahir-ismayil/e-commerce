@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./newComputer.css">
+    <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
@@ -15,7 +15,7 @@
             <div >
                 <a href="./index.html">E-commerce</a>
                 <a href="./index.html">Home</a>
-                <a href="contact.html">Contact</a>
+                <a href="./contact.html">Contact</a>
                 <a href="./about.html">About</a>
                 <a href="./registration.html">Sign Up</a>
                 <a href="./shopping.html">Shop</a>
@@ -30,28 +30,29 @@
             </div>
         </div>
 
-        <div class="main">
-            <h1>Create product</h1>
-            <form action="./userProducts.html" id="form">
-                <label for="">Brand</label>
-                <input type="text" id="brand" required>
-                <label for="">Model</label>
-                <input type="text" id="modal" required>
-                <label for="">Category</label>
-                <input type="text" id="category">
-                <label for="">Description</label>
-                <textarea name="" id="description"></textarea>
-                <label for="">Price</label>
-                <input type="number" id="price" required>
-                <!-- <label for="">Rating</label>
-                <input type="text" id="rating"> -->
-                <label for="">Image URL</label>
-                <input type="url" id="url" required>
-                <img id="img" src="" alt="photo"><br>
-                <button onclick="save()">Save</button>
-                <input type="reset" id="reset" value="Reset">
-            </form>
+
+
+       <div class="main flex">
+        <div class="contact">
+            <p>Home / <b>Contact</b></p>
+
+            <div>
+                <img src="./contt.png" alt="">
+            </div>
         </div>
-        <script src="./newComputer.js"></script>
+        <form action="">
+            <input type="text" placeholder="Your Name *">
+            <input type="email" placeholder="Your Email *">
+            <input type="tel" placeholder="Your Phone *">
+            <textarea name="" placeholder="Your Massage" id=""></textarea>
+            <button>Send Massage</button>
+        </form>
+
+       </div>
+
+       <div class="footer">
+        <img src="./stttsrty.jpg" alt="">
+    </div>
+    <script src="./contact.js"></script>
 </body>
 </html>

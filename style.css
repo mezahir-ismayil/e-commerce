@@ -104,11 +104,8 @@
 .shopCollection {
     padding: 50px 100px;
     width: 100vw;
-    /* height: 140vh; */
     align-items: center;
-    /* padding-bottom: 20px; */
-    /* border-bottom: solid 1px rgb(204, 204, 204); */
-
+  
 }
 .shopCollection h2 {
     font-size: 40px;
@@ -173,8 +170,11 @@ a i {
     /* background-color: red; */
 
 }
+.aks img {
+    width: 25vw;
+}
 .feedBack {
-    padding: 50px 0;
+    /* padding: 50px 0; */
 }
 .feedBack h1{
     color: red;
@@ -283,4 +283,12 @@ a i {
 .two img:nth-child(1):hover {
     z-index: 99;
     /* transform: translateY(40px); */
+}
+.resume {
+    width: 99vw;
+}
+
+.footer img{
+    width: 100vw;
+    height: 350px;
 }

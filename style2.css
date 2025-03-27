@@ -284,3 +284,8 @@ a i {
     z-index: 99;
     /* transform: translateY(40px); */
 }
+
+.footer img{
+    width: 99vw;
+    height: 350px;
+}

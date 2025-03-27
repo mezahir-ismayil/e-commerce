@@ -123,3 +123,8 @@
 .userData span {
     font-weight: normal;
 }
+
+.footer img{
+    width: 100vw;
+    height: 350px;
+}

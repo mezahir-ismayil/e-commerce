@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./checkout.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="discountRed">
+        <p>Summer sale for all swim suit and free express delivery - OFF 50%! <a href="">ShopNow</a></p>
+    </div>
+        <div class="menu">
+            <div >
+                <a href="./index.html">E-commerce</a>
+                <a href="./index.html">Home</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./about.html">About</a>
+                <a href="./registration.html">Sign Up</a>
+                <a href="./shopping.html">Shop</a>
+            </div>
+            <div class="section2 flex">
+                <input type="search" placeholder="What are you looking for ?">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="./bascet.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                <a href="./profile.html"><i class="fa-solid fa-user"></i></a>
+                <p id="user">username</p>
+                <button onclick="logOut()">log out</button>
+            </div>
+        </div>
+
+        <div class="flex formPlace">
+            <form action="./index2.html" class="flex" id="myForm">
+               <div class="form1">
+                <label for="">First name</label>
+                <input type="text">
+                <label for="">Last name</label>
+                <input type="text">
+                <label for="">State</label>
+                <select name="" id="">
+                    <option value="">Choose...</option>
+                    <option value="">Turkey</option>
+                    <option value="">Azerbaidjan</option>
+                    <option value="">Spain</option>
+                    <option value="">Russia</option>
+                </select>
+                <label for="">Address</label>
+                <input type="text">
+                <label for="">Zip</label>
+                <input type="text">
+                <label for="">Tel</label>
+                <input type="tel" value="+994 ">
+                <label for="">Email</label>
+                <input type="email"><br>
+                <input type="checkbox" value="1" class="checkbox">
+                <label for="" class="agreement">Agree to terms and conditions</label>
+               </div>
+
+               <div class="form2">
+                <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt=""> <br>
+                    <label for="">Card number</label>
+                    <input type="text" placeholder="0000 0000 0000 0000">
+                    <div class="flex cartData">
+                        <div>
+                            <label for="">Expiration(MM)</label> <br>
+                            <input type="text" placeholder="MM">
+                        </div>
+                        <div>
+                            <label for="">Expiration(YY)</label><br>
+                            <input type="text" placeholder="YY">
+                        </div>
+                        <div>
+                            <label for="">Card security code</label><br>
+                            <input type="number" max="999" min="100" placeholder="xxx">
+                        </div>
+                    </div>
+
+                    <div class="orderSection">
+              
+                        <div class="totalCart">
+                            <p>Subtotal <span id="cartCheck"></span></p> 
+                            <p>Shipping <span id="free">free</span></p>
+                            <p>Total <span id="cartTotal"></span></p>
+                            <button id="orderBtn" onclick="return validate()">Place order</button>
+                        </div>
+                    </div>
+
+               </div>
+            </form>
+        </div>
+        <div class="footer">
+            <img src="./stttsrty.jpg" alt="">
+        </div>
+    <script src="./checkout.js"></script>
+</body>
+</html>

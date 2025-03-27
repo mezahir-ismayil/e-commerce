@@ -1,7 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Linear+A&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
@@ -11,7 +7,8 @@
     box-sizing: border-box;
 }
 .main {
-    width: 100vw;
+    width: 99vw;
+    padding: 0 0 300px 0;
 }
 .menu {
     /* background-color: #DB4444; */
@@ -27,7 +24,7 @@
     justify-content: space-between;
     align-items:center;
     /* background-color: red; */
-    width: 40%;
+    width: 38%;
 }
 .menu a {
     transition: 0.5s;
@@ -68,6 +65,7 @@
     border: none;
     padding: 7px 20px;
     border-radius: 10px;
+    width: 100px;
 
 }
 .section2 i {
@@ -99,113 +97,97 @@
     font-weight: 700;
 }
 
-
-/* ******************************* */
-
-
-
-.shoppingSection {
+.formPlace form{
+    width: 100vw;
     display: flex;
-    padding: 0 150px;
-    width: 99vw;
+    justify-content: space-evenly;
 }
 
-.sidebar {
-    width: 30%;
-    padding: 20px;
-    background: #f8f8f8;
-    /* background-color: red; */
+.form1 {
+    width: 35%;
 }
-.sidebar h1, .sidebar h2 {
-    margin: 20px 0;
-}
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-.sidebar ul li {
-    padding: 5px 0;
-    cursor: pointer;
-}
-.rating span {
-    cursor: pointer;
-    display: block;
-    color: rgb(255, 191, 0);
-    font-size: 30px;
-    margin-top: 20px;
-}
-.main-content {
-    /* flex-grow: 1; */
-    padding: 20px;
-    width: 70%;
-}
-.sort-by {
-    margin-bottom: 20px;
-    padding: 5px;
-    width: 200px;
-
-}
-.products .row1,.row2{
-    display: flex;
-    /* width: 50%; */
-    /* gap: 20px; */
-}
-
-.product {
-    border: 1px solid #ddd;
-    padding: 20px;
-    text-align: center;
-    margin: 10px;
-    width: 185px;
-}
-.product:nth-child(even) {
-    padding: 30px 20px;
-}
-.product img {
-    max-width: 90%;
-    height: auto;
-    margin: 20px 0;
-}
-.price {
-    color: red;
-    font-weight: bold;
-}
-.add-to-cart {
-    background: black;
-    color: white;
-    padding: 10px;
-    margin: 20px auto;
-    border: none;
-    cursor: pointer;
+.form1 input {
     width: 100%;
-    border-radius: 10px;
-}
-.sidebar input {
     padding: 5px;
-    border: solid 1px rgb(215, 209, 209);
+    border-radius: 7px;
+    border: 1px rgb(226, 216, 216) solid;
     outline: none;
 }
-.all-products {
-    background-color: #DB4444;
-    padding: 8px;
-    border-radius: 5px;
-    color: white;
-    border: none;
-    width: 100px;
+.form2 {
+    width: 35%;
+}
+.form2 input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px rgb(226, 216, 216) solid;
+    outline: none;
+}
+input:focus {
+    box-shadow: 1px 1px 3px 3px rgb(170, 211, 216);
 }
 
-
-.addedItems {
-    display: flex;
-    flex-wrap: wrap;
-
+.checkbox {
+    width: auto !important;
+    /* padding: 20px !important; */
 }
- .product p:nth-child(4) {
-    color: rgb(255, 191, 0);
+.agreement {
+    font-size: 13px;
+}
+.orderSection {
+    width: 100%;
+}
+select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px rgb(226, 216, 216) solid;
+    outline: none;
+    margin-bottom: 10px;
+}
+.cartData {
+    justify-content: space-between;
+    width: 100%;
+    /* width: 200px !important; */
+}
+input {
+    margin: 10px 0;
+}
+.totalCart {
+    margin-top: 20px;
+    width: 100%;
+}
+.totalCart p {
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: solid 1px rgb(179, 179, 179);
     font-size: 20px;
- }
+}
+.totalCart button {
+    background-color: #DB4444;
+    padding: 15px 30px;
+    display: block;
+    margin: 0 0 0 auto;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+#cartCheck {
+    margin-left: 72%;
+}
 
- .footer img{
-    width: 100vw;
+#cartTotal {
+    margin-left: 79%;
+}
+#free {
+    margin-left: 73%;
+}
+
+.footer {
+    margin-top: 65px;
+}
+.footer img{
+    width: 99vw;
     height: 350px;
 }
